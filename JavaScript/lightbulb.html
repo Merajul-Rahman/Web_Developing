@@ -7,9 +7,11 @@
 </head>
 <body>
     <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
-        <button onclick=lighton()>Turn On</button>
+        <button id="Onbutton" onclick=lighton()>Turn On</button>
         <img id="bulb" src="pic_bulboff.gif" alt="">
-        <button onclick=lightoff()>Turn Off</button>
+        <button id="offbutton" onclick=lightoff()>Turn Off</button>
+        <p id="para">Text Size Check</p>
+        <button onclick=changecss()>Font Size</button>
     </div>
 </body>
 </html>
@@ -39,5 +41,9 @@
         {
             document.getElementById('bulb').src='pic_bulboff.gif'
         }
+    }
+    function changecss()
+    {
+        document.getElementById('para').style.fontSize = "35px"
     }
 </script>
