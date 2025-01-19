@@ -7,9 +7,37 @@
 </head>
 <body>
     <div style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;">
-        <button onclick="getElementById('bulb').src='pic_bulbon.gif'">Turn On</button>
+        <button onclick=lighton()>Turn On</button>
         <img id="bulb" src="pic_bulboff.gif" alt="">
-        <button onclick="getElementById('bulb').src='pic_bulboff.gif'">Turn Off</button>
+        <button onclick=lightoff()>Turn Off</button>
     </div>
 </body>
 </html>
+
+<script>
+    function lighton()
+    {   
+        var sorce = document.getElementById('bulb').src
+        if(sorce.includes('pic_bulbon.gif'))
+        {
+            alert('The light is already ON')
+            
+        }
+        else
+        {
+            document.getElementById('bulb').src='pic_bulbon.gif'
+        }
+    }
+    function lightoff()
+    {
+        var sorce = document.getElementById('bulb').src
+        if(sorce.includes('pic_bulboff.gif'))
+        {
+            alert('The light is already OFF')
+        }
+        else
+        {
+            document.getElementById('bulb').src='pic_bulboff.gif'
+        }
+    }
+</script>
