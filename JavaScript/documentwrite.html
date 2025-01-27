@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<p>Never call document.write after the document has finished loading.
+It will overwrite the whole document.</p>
+<button onclick="overwrite()">overwrite</button>
+
+<script>
+    function overwrite()
+    {
+        alert("It is an example of javascript output using alert")
+        alert("We can see 5+10 = " + (5+10) )
+        const userResponse = prompt("Do you want to Overwrite the entire page?");
+        if (userResponse == "Yes" || userResponse =="yes")
+        {
+            alert("Your Response was "+userResponse);
+            console.log("All ok");
+            console.log("Your Response was "+userResponse);
+            document.write("Everything will be overwrite");
+        }
+    }
+document.write("My name is Shipon");
+</script>
+
+</body>
+</html> 
