@@ -71,3 +71,43 @@ num8 %= 55;
 console.log(num8);
 
 //Comparison Operator
+/* Operator	Description
+==	equal to
+===	equal value and equal type
+!=	not equal
+!==	not equal value or not equal type
+>	greater than
+<	less than
+>=	greater than or equal to
+<=	less than or equal to
+?	ternary operator */
+let x = 5;
+console.log(x==8);
+console.log(x==5);
+console.log(x==5.0);
+console.log(x == '5');
+
+console.log(x===8);
+console.log(x===5);
+console.log(x===5.0); //all types of number with .0 stored as the whole number.
+console.log(x === '5');
+
+console.log(x!=8);
+console.log(x!=5);
+console.log(x!="5");
+
+console.log(x!==8);
+console.log(x!==5);
+console.log(x!=="5");
+
+console.log(x<8, x<"8");
+console.log(x<1, x<"1");
+
+console.log(x>8, x>"8");
+console.log(x>1, x>"1");
+
+console.log(x<=8, x<="8");
+console.log(x<=1, x<="1");
+
+console.log(x>=8, x>="8");
+console.log(x>=1, x>="1");
