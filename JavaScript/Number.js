@@ -30,3 +30,44 @@ let str2 = "19658.58418";
 console.log(str2, typeof str2);
 let num7 = parseFloat(str2);
 console.log(num7, typeof num7);
+
+//JS Arithmatics
+console.log("Addition",num1+num2);
+console.log("Subtraction",num7-num2);
+console.log("Multiplication",num1*num2);
+console.log("Division",num6/num1);
+console.log("Exponantial 5**2=", 5**2);
+console.log("Modulas 5%2=", 5%2);
+console.log("Increment x++ = " ,num1++,num1,++num1,num1);
+console.log("Decrement x-- = ", num1--);
+
+// JS Assignment Operators
+/* 
+=	x = y	x = y
++=	x += y	x = x + y
+-=	x -= y	x = x - y
+*=	x *= y	x = x * y
+/=	x /= y	x = x / y
+%=	x %= y	x = x % y
+**=	x **= y	x = x ** y 
+*/
+let num8 = 10;
+num8 += 10;
+console.log(num8);
+
+num8 -= 10;
+console.log(num8);
+
+num8 *= 10;
+console.log(num8);
+
+num8 /= 10;
+console.log(num8);
+
+num8 **= 3;
+console.log(num8)
+
+num8 %= 55;
+console.log(num8);
+
+//Comparison Operator
