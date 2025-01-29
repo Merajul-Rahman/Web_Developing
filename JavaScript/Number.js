@@ -111,3 +111,52 @@ console.log(x<=1, x<="1");
 
 console.log(x>=8, x>="8");
 console.log(x>=1, x>="1");
+
+let text, age=19;
+if (age < 18) text = "Too young to vote";
+else text = "You can vote";
+console.log(text);
+
+console.log(2 < 12, 2 < "12", 2 < "John", 2 > "John", 2 == "John", "2" < "12", "2" > "12", "2" == "12");
+
+
+// Conditional (Ternary) Operator
+age = "55"
+age = Number(age);
+if (isNaN(age)) {
+  voteable = "Input is not a number";
+} else {
+  voteable = (age < 18) ? "Too young" : "Old enough";  //ternary operator
+}
+console.log(voteable);
+
+// Logical Operator
+/* Operator	Description	Example	
+&&	and	(x < 10 && y > 1) is true	
+||	or	(x == 5 || y == 5) is false	
+!	not	!(x == y) is true */
+let a = 5, b = 8;
+console.log(a<10 && b>1);
+console.log(a == 1 || b ==5);
+console.log(!(a==b));
+
+// The Nullish Coalescing Operator (??)
+
+/* The ?? operator returns the first argument if it is not nullish (null or undefined).
+Otherwise it returns the second argument. */
+
+let name = null;
+let text1 = "missing";
+let result = name ?? text1;
+console.log(name, text1, result);
+
+let name2 = "Shipon";
+console.log(name2??text1);
+
+// The Optional Chaining Operator (?.)
+// The ?. operator returns undefined if an object is undefined or null (instead of throwing an error).
+// Create an object:
+const car = {type:"Fiat", model:"500", color:"white"};
+// Ask for car name:
+console.log(car?.name);
+console.log(car?.color);
