@@ -70,6 +70,35 @@ console.log(num8)
 num8 %= 55;
 console.log(num8);
 
+/* Logical Assignment Operators
+Operator	Example	Same As
+&&=	x &&= y	x = x && (x = y) if x == true then assign x = y else it remains unchanged.
+||=	x ||= y	x = x || (x = y) If x is falsy (e.g., false, 0, "", null, undefined, or NaN), then x is assigned the value of y.
+??=	x ??= y	x = x ?? (x = y) If x is null or undefined, then x is assigned the value of y.    */
+
+let lao1 = 10;
+lao1 &&= 5;
+console.log("Logical",lao1);
+let lao2 = 0;
+lao2 &&= 5;
+console.log("Logical",lao2);
+
+let lao3 = 10;
+lao3 ||= 5;
+console.log("Logical",lao3);
+let lao4 = 0;
+lao4 ||= 5;
+console.log("Logical",lao4);
+
+let lao5 = 0;
+lao5 ??= 5;
+console.log("Logical",lao5);
+let lao6 = null;
+lao6 ??= 5;
+console.log("Logical",lao6);
+
+
+
 //Comparison Operator
 /* Operator	Description
 ==	equal to
@@ -160,3 +189,33 @@ const car = {type:"Fiat", model:"500", color:"white"};
 // Ask for car name:
 console.log(car?.name);
 console.log(car?.color);
+
+
+
+// JavaScript Type Operators
+// Operator	Description
+// typeof	Returns the type of a variable
+// instanceof	Returns true if an object is an instance of an object type
+console.log(typeof 45);
+
+
+
+// JavaScript Bitwise Operators
+// Bit operators work on 32 bits numbers.
+
+// Any numeric operand in the operation is converted into a 32 bit number. The result is converted back to a JavaScript number.
+// Operator	Description	Example	Same as	Result	Decimal
+// &	AND	5 & 1	0101 & 0001	0001	 1
+// |	OR	5 | 1	0101 | 0001	0101	 5
+// ~	NOT	~ 5	 ~0101	1010	 10
+// ^	XOR	5 ^ 1	0101 ^ 0001	0100	 4
+// <<	left shift	5 << 1	0101 << 1	1010	 10
+// >>	right shift	5 >> 1	0101 >> 1	0010	  2
+// >>>	unsigned right shift	5 >>> 1	0101 >>> 1	0010	  2
+console.log(5&1);
+console.log(5|1);
+console.log(~+5);
+console.log(5^1);
+console.log(5<<1);
+console.log(5>>1);
+console.log(5>>>1);
