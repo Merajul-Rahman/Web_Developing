@@ -164,3 +164,26 @@ console.log(text10.replaceAll(/Microsoft/g,"Website"));
 console.log(text10.split("!")); //returns an array.
 console.log(text10.split(" "));
 console.log(text10.split("")); //all character is splitted.
+
+
+
+//String Search Methods
+/* String indexOf()
+String lastIndexOf()
+String search()
+String match()
+String matchAll()
+String includes()
+String startsWith()
+String endsWith() */
+//The indexOf() method returns the index (position) of the first occurrence of a string in a string, or it returns -1 if the string is not found:
+
+let text14 = "Please locate where 'locate' occurs!";
+let index = text14.indexOf("locate");
+console.log(index);
+console.log(text14.indexOf('John'));
+console.log(text14.indexOf('locate',15)); // will start searching from 15
+
+// The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:
+
+
